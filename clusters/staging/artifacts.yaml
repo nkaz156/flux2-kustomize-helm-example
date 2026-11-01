@@ -25,5 +25,7 @@ spec:
     - name: test-artifact
       originRevision: "@monorepo"
       copy:
-        - from: "@monorepo/apps_test/group2/*/*/staging/**"
+        - from: "@monorepo/apps_test/group2/**"
           to: "@artifact/"
+          exclude:
+            - "**/prod/**"
