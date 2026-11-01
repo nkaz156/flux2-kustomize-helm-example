@@ -22,10 +22,10 @@ spec:
           to: "@artifact/base/"
         - from: "@monorepo/apps/staging/**"
           to: "@artifact/staging/"
-    - name: test-artifact
-      originRevision: "@monorepo"
-      copy:
-        - from: "@monorepo/apps_test/group2/**"
-          to: "@artifact/"
-          exclude:
-            - "**/prod/**"
+    # - name: test-artifact
+    #   originRevision: "@monorepo"
+    #   copy:
+    #     - from: "@monorepo/apps_test/group2/**"
+    #       to: "@artifact/"
+    #       exclude:
+    #         - "**/prod/**"
