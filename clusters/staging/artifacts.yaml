@@ -25,7 +25,7 @@ spec:
     - name: system
       originRevision: "@monorepo"
       copy:
-        - from: "@monorepo/apps_test/group2/**"
+        - from: "@monorepo/**"
           to: "@artifact/"
           exclude:
             - "**/prod/**"
